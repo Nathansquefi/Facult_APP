@@ -56,7 +56,7 @@ export default function Dashboard() {
     );
   }
 
-  // 2. Novo Estado de Erro (Tratamento profissional de falhas)
+  // 2. Novo Estado de Erro 
   if (error) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-slate-50 p-4">

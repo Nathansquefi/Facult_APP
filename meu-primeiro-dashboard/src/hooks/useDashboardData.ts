@@ -13,8 +13,7 @@ export function useDashboardData() {
         setLoading(true);
         setError(null);
 
-        // Uma API real de testes estruturada exatamente para o nosso dashboard
-        // Altere apenas a linha do axios.get para esta:
+        
         const response = await axios.get<Transaction[]>('http://localhost:3000/transactions');
 
         setTransactions(response.data);
@@ -29,7 +28,7 @@ export function useDashboardData() {
     fetchApiData();
   }, []);
 
-  // Consolidação dos dados (continua igual, performance garantida com useMemo)
+  
   const metrics = useMemo(() => {
     return transactions.reduce(
       (acc, transaction) => {

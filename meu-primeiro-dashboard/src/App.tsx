@@ -169,7 +169,7 @@ export default function App() {
     {/* 1. FORMULÁRIO ENVIANDO O COMANDO DE SALVAR */}
     <FormCadastroSeguro onAdicionarCadeira={(nova) => setCadeiras([...cadeiras, nova])} />
     
-    {/* 2. LISTAGEM DO STITCH QUE EXIBE E REMOVE AS DISCIPLINAS DO LOCALSTORAGE */}
+    {/* 2. LISTA DE DISCIPLINAS CADASTRADAS */}
     <ListaDisciplinas 
       cadeiras={cadeiras} 
       onExcluirCadeira={(id) => setCadeiras(cadeiras.filter(c => c.id !== id))} 
