@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.glass-card {
+  background: rgba(18, 33, 49, 0.4);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(0, 218, 243, 0.2);
+}
+
+.glass-card {
+  background: rgba(18, 33, 49, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.neon-glow-primary {
+  box-shadow: 0 0 15px rgba(0, 218, 243, 0.2);
+}
+
+.target-line {
+  background-image: linear-gradient(to right, #FF4B4B 50%, transparent 50%);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
